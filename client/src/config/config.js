@@ -1,9 +1,9 @@
 const config = {
   development: {
-    backendUrl: `${process.env.VITE_BACKEND_URL}/api/v1/dalle`,
+    backendUrl: 'https://project-threejs-ai-2mft.onrender.com',
   },
   production: {
-    backendUrl: `${process.env.VITE_BACKEND_URL}/api/v1/dalle`,
+    backendUrl: 'https://project-threejs-ai-2mft.onrender.com',
   },
 };
 
