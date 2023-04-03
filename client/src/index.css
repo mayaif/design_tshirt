@@ -90,3 +90,26 @@ input[type="file"] {
 .sketch-picker > div:nth-child(3) {
   display: none !important;
 }
+
+@keyframes dots {
+  0% {
+    content: "";
+  }
+  25% {
+    content: ".";
+  }
+  50% {
+    content: "..";
+  }
+  75% {
+    content: "...";
+  }
+  100% {
+    content: "";
+  }
+}
+
+.loading::after {
+  content: "";
+  animation: dots 1s infinite;
+}
