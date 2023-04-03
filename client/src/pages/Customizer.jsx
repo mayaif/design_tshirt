@@ -53,7 +53,7 @@ function Customizer() {
     try {
       //call backend to generate an ai image
       setGeneratingImg(true)
-      const response = await fetch('http://localhost:8080/api/v1/dalle', {
+      const response = await fetch(process.env.BACKEND_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
