@@ -53,7 +53,7 @@ function Customizer() {
     try {
       //call backend to generate an ai image
       setGeneratingImg(true)
-      const response = await fetch('https://project-threejs-ai-2mft.onrender.com/api/v1/dalle', {
+      const response = await fetch(`${process.env.VITE_PUBLIC_BACKEND_URL}/api/v1/dalle`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

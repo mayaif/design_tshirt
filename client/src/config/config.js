@@ -1,9 +1,12 @@
+// import dotenv from 'dotenv';
+// dotenv.config();
+
 const config = {
   development: {
-    backendUrl: 'https://project-threejs-ai-2mft.onrender.com',
+    backendUrl: import.meta.env.VITE_PUBLIC_BACKEND_URL,
   },
   production: {
-    backendUrl: 'https://project-threejs-ai-2mft.onrender.com',
+    backendUrl: import.meta.env.VITE_PUBLIC_BACKEND_URL,
   },
 };
 
