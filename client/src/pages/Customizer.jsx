@@ -25,6 +25,10 @@ function Customizer() {
     styleshShirt: false
   });
   
+  // const [showColorPicker, setShowColorPicker] = useState(true);
+  
+
+
   //show tab content depending on the activeTab
   const generateTabContent = () => {
     switch (activeEditorTab) {
@@ -129,7 +133,12 @@ function Customizer() {
                 <Tab 
                   key={tab.name}
                   tab={tab}
-                  handleClick = {() => setActiveEditorTab(tab.name)}
+                 
+                  handleClick = {() => {
+                    setActiveEditorTab(tab.name)
+                    // setShowColorPicker(prev => !prev);
+                   
+                  }}
                 />
               ))}
               {generateTabContent()}

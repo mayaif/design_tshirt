@@ -18,15 +18,21 @@ function Home() {
     <AnimatePresence>
       {snap.intro && (
         <motion.section className='home' {...slideAnimation('left')}>
-          <motion.header {...slideAnimation('down')}>
+          <motion.header className='flex grid-cols-2 gap-5 items-center justify-evenly ' {...slideAnimation('down')}>
             <img 
               src='./threejs.png' 
               alt='logo'
               className='w-8 h-8 object-contain'
             />
+            <p style={{color: snap.color, fontSize: '2rem'}}
+              className='head-text'
+              >
+                DALL<span>•</span>E
+              </p>
           </motion.header>
           <motion.div className='home-content' {...headContentAnimation}>
             <motion.div {...headTextAnimation}>
+            
               <h1 className='head-text'>
                 LET'S <br className='xl:block hidden' /> DO IT
               </h1>
@@ -46,6 +52,16 @@ function Home() {
                 customStyles='w-fit px-4 py-2.5 font-bold text-sm'
               />
             </motion.div>
+            {/* <motion.div {...headTextAnimation}>
+              <p>Create with</p>
+              <h1 style={{color: snap.color, fontSize: '3rem'}}
+              className='head-text xl:ml-20'
+              >
+                DALL.E
+                
+              </h1>
+              <p>and Unlok the Potential of Creative AI</p>
+            </motion.div> */}
           </motion.div>
         </motion.section>
       )}
