@@ -4,11 +4,11 @@ Built with React ThreeJS 3D, CSS & TailwindCSS, React Three Fiber to render Thre
 
 Allows users to customize 3D t-shirt model by adding custom color and file support or asking Dalle to create a logo design. 
 
-Front-end: Create vite app with React Three.JS
+Front-end (client folder): Create vite app with React Three.JS
 
-Setup: npm i & npm run dev
+Setup: npm i && npm run dev
 
-Server-side: Node.js and Express. Open AI key.
+Server: Node.js and Express. Open AI key.
 
-Setup: npm i & npm run dev
+Setup: npm i && npm run dev
 
